@@ -28,9 +28,8 @@ public class HomeController {
 	
 	//login page
 	@RequestMapping(value="/login", method = RequestMethod.GET) 
-	public ModelAndView displayLoginPage(HttpServletResponse response) throws IOException{
-		//return new ModelAndView("login", "player", new PlayerModel(0,"", ""));
-		return new ModelAndView("login"); 
+	public ModelAndView displayLoginPage() {
+		return new ModelAndView("login", "player", new PlayerModel());
 	}
 	
 	//registration page

@@ -20,26 +20,22 @@
 <body>
 <div class="container text-center">
 	<h2>Login</h2>
-	<p>There are currently errors with the form & its model attribute</p>
-	<!--  FIX THE ERRORS WITH THE ATTRIBUTE -->
-<!-- 	<form:form method= "POST" modelAttribute="player" action="loginSuccess">
-		<table> 
-			<tr>
-				<td><form:label path="name">Name:</form:label></td>
-				<td><form:input placeholder="Enter Name" path="name"/></td>
-			</tr>
-			<tr>
-				<td><form:label path="password">Password:</form:label></td>
-				<td><form:password placeholder="Enter Password" path="password"/></td>
-			</tr>
-			<tr>
-				<td colspan="2"> 
-					<input type = "submit" value = "Submit"/>
-				</td>
-			</table>
-
-		<font color="red"><form:errors path="*"/></font>
-	</form:form> -->
+		<form:form method= "POST" modelAttribute="player" action="loginSuccess">
+			<table> 
+				<tr>
+					<td>Name:</td>
+					<td><form:input path="name"/></td>
+				</tr>
+				<tr>
+					<td>Password:</td>
+					<td><form:password path="password"/></td>
+				</tr>
+				<tr>
+					<td colspan="2"> 
+						<input type = "submit" value = "Submit"/>
+					</td>
+				</table>
+		</form:form> 
 
 </div>
 </body>
