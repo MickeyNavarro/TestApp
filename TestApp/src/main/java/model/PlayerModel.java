@@ -21,6 +21,8 @@ public class PlayerModel {
 	@Size(min=3, max=30, message="Password must be between 3 and 30 characters.")
 	private String Password;
 
+	public PlayerModel() { }
+	
 	public PlayerModel(int iD, String name, String password) {
 		super();
 		ID = iD;
